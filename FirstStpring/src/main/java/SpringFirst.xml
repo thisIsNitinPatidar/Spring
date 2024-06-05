@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class="com.springProject.FirstStpring.Employee" name = "Emp">
+       <property name="eid">
+       <value>101</value></property>
+       <property name="ename">
+       <value>monika</value></property>
+       <property name="desig">
+       <value>java developer</value></property>
+       <property name="salary">
+       <value>3400.56</value></property>
+   </bean>
+   
+    <bean class="com.springProject.FirstStpring.Employee" name = "Emp5" p:eid="102" p:ename="payal" p:desig="python developer" p:salary="5000.76" >
+       
+   </bean>
+   
+   <bean class="com.springProject.FirstStpring.Student" name = "student">
+       <property name="studentId">
+       <value>1</value></property>
+       <property name="studentName">
+       <value>vaishnavi</value></property>
+       <property name="studentCity">
+       <value>khargone</value></property>
+       <property name="studentBranch">
+       <value>MCA</value></property>
+   </bean>
+   
+    <bean class="com.springProject.FirstStpring.Student" name = "student1">
+       <property name="studentId">
+       <value>2</value></property>
+       <property name="studentName">
+       <value>ronak</value></property>
+       <property name="studentCity">
+       <value>pune</value></property>
+       <property name="studentBranch">
+       <value>bca</value></property>
+   </bean>
+
+</beans>
